@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevNet Club - Club de développement et réseaux pour étudiants L2-L3. Apprendre, construire et progresser ensemble.">
+    <title>DevNet Club - Développement & Réseaux</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔗</text></svg>">
+  
+</head>
+<body>
+    <a href="#main" class="skip-link">Aller au contenu principal</a>
+    
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="logo">
+                    <img src="img/logo.png" alt="">
+            </a>
+            
+            <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu">
+                ☰
+            </button>
+            
+            <nav class="nav" aria-label="Navigation principale">
+                <ul class="nav__list" id="navList">
+                    <li><a href="#accueil" class="nav__link" aria-current="page">Accueil</a></li>
+                    <li><a href="#apropos" class="nav__link">À_propos</a></li>
+                    <li><a href="#roadmap" class="nav__link">Roadmap</a></li>
+                    <li><a href="#projets" class="nav__link">Projets</a></li>
+                    <li><a href="#reseau" class="nav__link">Réseaux</a></li>
+                    <li><a href="#evenements" class="nav__link">Événements</a></li>
+                    <li><a href="#reglement" class="nav__link">Règlement</a></li>
+                    <li><a href="#equipe" class="nav__link">Équipe</a></li>
+                    <li><a href="#rejoindre" class="nav__link">Rejoindre</a></li>
+                    <li><a href="#faq" class="nav__link">FAQ</a></li>
+                </ul>
+            </nav>
+            
+            <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+    
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="accueil" class="hero section">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title"><span class="typewriter">Développement d'Application & Réseaux Informatique simulés</span></h1>
+                    <p class="hero__subtitle">On apprend, on construit, on progresse (L2→L3)</p>
+                    <div class="hero__cta">
+                        <a href="#roadmap" class="btn">Voir la roadmap</a>
+                        <a href="document/Reglement_Interieur_Club_Dev_Reseaux.pdf" class="btn btn--secondary">Télécharger le règlement</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="apropos" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2>À propos du DevNet Club</h2>
+                    <p>Notre mission, nos valeurs et notre méthode</p>
+                </div>
+                
+                <div class="about__grid">
+                    <div class="card about__card reveal">
+                        <div class="about__icon">🎯</div>
+                        <h3>Mission</h3>
+                        <p>Offrir un environnement d'apprentissage pratique pour les étudiants en développement et réseaux, en combinant théorie et pratique dans des projets concrets.</p>
+                    </div>
+                    
+                    <div class="card about__card reveal">
+                        <div class="about__icon">❤️</div>
+                        <h3>Valeurs</h3>
+                        <p>Bienveillance, entraide et progression continue. Chaque membre a quelque chose à apprendre et à enseigner, quel que soit son niveau.</p>
+                    </div>
+                    
+                    <div class="card about__card reveal">
+                        <div class="about__icon">🔄</div>
+                        <h3>Méthode</h3>
+                        <p>Apprentissage progressif par projets, mentorat par les pairs, et sessions régulières de partage de connaissances et de revue de code.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline__item reveal">
+                        <div class="timeline__dot"></div>
+                        <h3>1er Août 2023</h3>
+                        <p>Lancement officiel du DevNet Club avec la première session de présentation et d'orientation.</p>
+                    </div>
+                    
+                    <div class="timeline__item reveal">
+                        <div class="timeline__dot"></div>
+                        <h3>Session Hebdomadaire</h3>
+                        <p>Réunions chaque mercredi de 18h à 20h pour des ateliers pratiques et des présentations.</p>
+                    </div>
+                    
+                    <div class="timeline__item reveal">
+                        <div class="timeline__dot"></div>
+                        <h3>Challenges Mensuels</h3>
+                        <p>Chaque mois, un nouveau défi technique est proposé aux membres pour appliquer leurs compétences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Roadmap Section -->
+        <section id="roadmap" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2>Roadmap L2 - L3</h2>
+                    <p>Parcours d'apprentissage progressif sur deux années</p>
+                </div>
+                
+                <div class="roadmap__tabs">
+                    <button class="roadmap__tab active" data-tab="dev">Développement</button>
+                    <button class="roadmap__tab" data-tab="reseau">Réseaux</button>
+                </div>
+                
+                <div class="roadmap__content active" id="roadmap-dev">
+                    <div class="roadmap__grid">
+                        <div class="roadmap__year">
+                            <h3 class="roadmap__year-title">L2 - Fondements</h3>
+                            
+                            <div class="roadmap__accordion">
+                                <div class="roadmap__accordion-header">
+                                    <h4 class="roadmap__accordion-title">HTML/CSS/JS Avancé</h4>
+                                    <span class="roadmap__accordion-icon">▼</span>
+                                </div>
+                                <div class="roadmap__accordion-content">
+                                    <p>Maîtrise des concepts avancés du développement front-end : flexbox, grid, animations CSS, DOM manipulation, et APIs modernes.</p>
+                                    <div class="roadmap__skills">
+                                        <span class="roadmap__skill">Semantic HTML</span>
+                                        <span class="roadmap__skill">CSS Grid</span>
+                                        <span class="roadmap__skill">Flexbox</span>
+                                        <span class="roadmap__skill">JavaScript ES6+</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="roadmap__accordion">
+                                <div class="roadmap__accordion-header">
+                                    <h4 class="roadmap__accordion-title">Introduction aux Frameworks</h4>
+                                    <span class="roadmap__accordion-icon">▼</span>
+                                </div>
+                                <div class="roadmap__accordion-content">
+                                    <p>Découverte des frameworks front-end modernes avec un focus sur React et ses concepts fondamentaux.</p>
+                                    <div class="roadmap__skills">
+                                        <span class="roadmap__skill">React</span>
+                                        <span class="roadmap__skill">Components</span>
+                                        <span class="roadmap__skill">State Management</span>
+                                        <span class="roadmap__skill">Hooks</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="roadmap__accordion">
+                                <div class="roadmap__accordion-header">
+                                    <h4 class="roadmap__accordion-title">Backend Basics</h4>
+                                    <span class="roadmap__accordion-icon">▼</span>
+                                </div>
+                                <div class="roadmap__accordion-content">
+                                    <p>Initiation au développement backend avec Node.js, Express et bases de données simples.</p>
+                                    <div class="roadmap__skills">
+                                        <span class="roadmap__skill">Node.js</span>
+                                        <span class="roadmap__skill">Express</span>
+                                        <span class="roadmap__skill">REST APIs</span>
+                                        <span class="roadmap__skill">MongoDB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="roadmap__year">
+                            <h3 class="roadmap__year-title">L3 - Expertise</h3>
+                            
+                            <div class="roadmap__accordion">
+                                <div class="roadmap__accordion-header">
+                                    <h4 class="roadmap__accordion-title">Frameworks Avancés</h4>
+                                    <span class="roadmap__accordion-icon">▼</span>
+                                </div>
+                                <div class="roadmap__accordion-content">
+                                    <p>Approfondissement des connaissances sur React et exploration d'autres frameworks comme Vue ou Angular.</p>
+                                    <div class="roadmap__skills">
+                                        <span class="roadmap__skill">React Advanced</span>
+                                        <span class="roadmap__skill">Vue.js</span>
+                                        <span class="roadmap__skill">State Management</span>
+                                        <span class="roadmap__skill">Testing</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="roadmap__accordion">
+                                <div class="roadmap__accordion-header">
+                                    <h4 class="roadmap__accordion-title">Backend Avancé</h4>
+                                    <span class="roadmap__accordion-icon">▼</span>
+                                </div>
+                                <div class="roadmap__accordion-content">
+                                    <p>Développement d'APIs robustes, authentification, autorisation, et intégration de bases de données relationnelles.</p>
+                                    <div class="roadmap__skills">
+                                        <span class="roadmap__skill">API Design</span>
+                                        <span class="roadmap__skill">Authentication</span>
+                                        <span class="roadmap__skill">SQL</span>
+                                        <span class="roadmap__skill">Performance</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="roadmap__accordion">
+                                <div class="roadmap__accordion-header">
+                                    <h4 class="roadmap__accordion-title">Architecture & DevOps</h4>
+                                    <span class="roadmap__accordion-icon">▼</span>
+                                </div>
+                                <div class="roadmap__accordion-content">
+                                    <p>Concepts d'architecture logicielle, microservices, conteneurisation, et intégration continue.</p>
+                                    <div class="roadmap__skills">
+                                        <span class="roadmap__skill">Docker</span>
+                                        <span class="roadmap__skill">CI/CD</span>
+                                        <span class="roadmap__skill">Microservices</span>
+                                        <span class="roadmap__skill">Cloud</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="roadmap__content" id="roadmap-reseau">
+                    <div class="roadmap__grid">
+                        <div class="roadmap__year">
+                            <h3 class="roadmap__year-title">L2 - Fondements</h3>
+                            
+                            <div class="roadmap__accordion">
+                                <div class="roadmap__accordion-header">
+                                    <h4 class="roadmap__accordion-title">Réseaux Locaux</h4>
+                                    <span class="roadmap__accordion-icon">▼</span>
+                                </div>
+                                <div class="roadmap__accordion-content">
+                                    <p>Compréhension des concepts de base des réseaux locaux, topologies, et équipements réseau.</p>
+                                    <div class="roadmap__skills">
+                                        <span class="roadmap__skill">LAN</span>
+                                        <span class="roadmap__skill">Topologies</span>
+                                        <span class="roadmap__skill">Switches</span>
+                                        <span class="roadmap__skill">VLANs</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="roadmap__accordion">
+                                <div class="roadmap__accordion-header">
+                                    <h4 class="roadmap__accordion-title">Protocoles Réseaux</h4>
+                                    <span class="roadmap__accordion-icon">▼</span>
+                                </div>
+                                <div class="roadmap__accordion-content">
+                                    <p>Étude des protocoles fondamentaux TCP/IP, modèles OSI et TCP/IP, et adressage IP.</p>
+                                    <div class="roadmap__skills">
+                                        <span class="roadmap__skill">TCP/IP</span>
+                                        <span class="roadmap__skill">OSI Model</span>
+                                        <span class="roadmap__skill">IP Addressing</span>
+                                        <span class="roadmap__skill">Subnetting</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="roadmap__accordion">
+                                <div class="roadmap__accordion-header">
+                                    <h4 class="roadmap__accordion-title">Routage Statique</h4>
+                                    <span class="roadmap__accordion-icon">▼</span>
+                                </div>
+                                <div class="roadmap__accordion-content">
+                                    <p>Configuration de routeurs, tables de routage statique, et connectivité entre réseaux.</p>
+                                    <div class="roadmap__skills">
+                                        <span class="roadmap__skill">Routers</span>
+                                        <span class="roadmap__skill">Static Routes</span>
+                                        <span class="roadmap__skill">Inter-VLAN</span>
+                                        <span class="roadmap__skill">Troubleshooting</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="roadmap__year">
+                            <h3 class="roadmap__year-title">L3 - Expertise</h3>
+                            
+                            <div class="roadmap__accordion">
+                                <div class="roadmap__accordion-header">
+                                    <h4 class="roadmap__accordion-title">Routage Dynamique</h4>
+                                    <span class="roadmap__accordion-icon">▼</span>
+                                </div>
+                                <div class="roadmap__accordion-content">
+                                    <p>Implémentation et configuration de protocoles de routage dynamique OSPF et EIGRP.</p>
+                                    <div class="roadmap__skills">
+                                        <span class="roadmap__skill">OSPF</span>
+                                        <span class="roadmap__skill">EIGRP</span>
+                                        <span class="roadmap__skill">Route Redistribution</span>
+                                        <span class="roadmap__skill">Troubleshooting</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="roadmap__accordion">
+                                <div class="roadmap__accordion-header">
+                                    <h4 class="roadmap__accordion-title">Sécurité Réseau</h4>
+                                    <span class="roadmap__accordion-icon">▼</span>
+                                </div>
+                                <div class="roadmap__accordion-content">
+                                    <p>Mise en place de mesures de sécurité réseau : ACLs, NAT, pare-feu, et VPN.</p>
+                                    <div class="roadmap__skills">
+                                        <span class="roadmap__skill">ACLs</span>
+                                        <span class="roadmap__skill">NAT</span>
+                                        <span class="roadmap__skill">Firewalls</span>
+                                        <span class="roadmap__skill">VPN</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="roadmap__accordion">
+                                <div class="roadmap__accordion-header">
+                                    <h4 class="roadmap__accordion-title">Réseaux Avancés</h4>
+                                    <span class="roadmap__accordion-icon">▼</span>
+                                </div>
+                                <div class="roadmap__accordion-content">
+                                    <p>Concepts avancés : QoS, virtualisation réseau, SDN, et automation réseau.</p>
+                                    <div class="roadmap__skills">
+                                        <span class="roadmap__skill">QoS</span>
+                                        <span class="roadmap__skill">Virtualization</span>
+                                        <span class="roadmap__skill">SDN</span>
+                                        <span class="roadmap__skill">Automation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projets" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2>Projets Développement</h2>
+                    <p>Applications concrètes développées par nos membres</p>
+                </div>
+                
+                <div class="projects__grid">
+                    <div class="project__card reveal">
+                        <div class="project__card-inner">
+                            <div class="project__card-front" style="background-image: linear-gradient(to bottom, rgba(11, 18, 32, 0.7), rgba(11, 18, 32, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"300\" viewBox=\"0 0 400 300\"><rect width=\"400\" height=\"300\" fill=\"%2311182a\"/><text x=\"50%\" y=\"50%\" font-family=\"Arial\" font-size=\"24\" fill=\"%23E3E8EF\" text-anchor=\"middle\" dominant-baseline=\"middle\">Application Météo</text></svg>
+                                <h3>Application Météo Locale</h3>
+                                <p>Application web responsive utilisant une API météo pour afficher les prévisions locales.</p>
+                                <div class="project__tags">
+                                    <span class="project__tag">HTML/CSS</span>
+                                    <span class="project__tag">JavaScript</span>
+                                    <span class="project__tag">API</span>
+                                </div>
+                            </div>
+                            <div class="project__card-back">
+                                <div>
+                                    <h3>Application Météo Locale</h3>
+                                    <p>Application web qui utilise l'API OpenWeatherMap pour afficher les conditions météorologiques actuelles et les prévisions sur 5 jours avec une interface utilisateur intuitive.</p>
+                                    <div class="project__tags">
+                                        <span class="project__tag">HTML5</span>
+                                        <span class="project__tag">CSS3</span>
+                                        <span class="project__tag">JavaScript ES6+</span>
+                                        <span class="project__tag">REST API</span>
+                                    </div>
+                                </div>
+                                <div class="project__links">
+                                    <a href="#" class="btn btn--secondary">Voir le code</a>
+                                    <a href="#" class="btn">Voir la démo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project__card reveal">
+                        <div class="project__card-inner">
+                            <div class="project__card-front" style="background-image: linear-gradient(to bottom, rgba(11, 18, 32, 0.7), rgba(11, 18, 32, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"300\" viewBox=\"0 0 400 300\"><rect width=\"400\" height=\"300\" fill=\"%2311182a\"/><text x=\"50%\" y=\"50%\" font-family=\"Arial\" font-size=\"24\" fill=\"%23E3E8EF\" text-anchor=\"middle\" dominant-baseline=\"middle\">Tracker d'Habitudes</text></svg>
+                                <h3>Tracker d'Habitudes</h3>
+                                <p>Application mobile pour suivre et analyser ses habitudes quotidiennes.</p>
+                                <div class="project__tags">
+                                    <span class="project__tag">Flutter</span>
+                                    <span class="project__tag">Dart</span>
+                                    <span class="project__tag">SQLite</span>
+                                </div>
+                            </div>
+                            <div class="project__card-back">
+                                <div>
+                                    <h3>Tracker d'Habitudes</h3>
+                                    <p>Application mobile développée avec Flutter permettant aux utilisateurs de créer, suivre et analyser leurs habitudes quotidiennes avec des rappels et des statistiques visuelles.</p>
+                                    <div class="project__tags">
+                                        <span class="project__tag">Flutter</span>
+                                        <span class="project__tag">Dart</span>
+                                        <span class="project__tag">SQLite</span>
+                                        <span class="project__tag">Charts</span>
+                                    </div>
+                                </div>
+                                <div class="project__links">
+                                    <a href="#" class="btn btn--secondary">Voir le code</a>
+                                    <a href="#" class="btn">Voir la démo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project__card reveal">
+                        <div class="project__card-inner">
+                            <div class="project__card-front" style="background-image: linear-gradient(to bottom, rgba(11, 18, 32, 0.7), rgba(11, 18, 32, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"300\" viewBox=\"0 0 400 300\"><rect width=\"400\" height=\"300\" fill=\"%2311182a\"/><text x=\"50%\" y=\"50%\" font-family=\"Arial\" font-size=\"24\" fill=\"%23E3E8EF\" text-anchor=\"middle\" dominant-baseline=\"middle\">Jeu Éducatif</text></svg>
+                                <h3>Jeu Éducatif Mobile</h3>
+                                <p>Jeu interactif pour apprendre les concepts de programmation de manière ludique.</p>
+                                <div class="project__tags">
+                                    <span class="project__tag">React Native</span>
+                                    <span class="project__tag">JavaScript</span>
+                                    <span class="project__tag">Game</span>
+                                </div>
+                            </div>
+                            <div class="project__card-back">
+                                <div>
+                                    <h3>Jeu Éducatif Mobile</h3>
+                                    <p>Jeu éducatif développé avec React Native qui enseigne les concepts de base de la programmation à travers des puzzles et défis interactifs adaptés à différents niveaux.</p>
+                                    <div class="project__tags">
+                                        <span class="project__tag">React Native</span>
+                                        <span class="project__tag">JavaScript</span>
+                                        <span class="project__tag">Animation</span>
+                                        <span class="project__tag">Gamification</span>
+                                    </div>
+                                </div>
+                                <div class="project__links">
+                                    <a href="#" class="btn btn--secondary">Voir le code</a>
+                                    <a href="#" class="btn">Voir la démo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Networks Section -->
+        <section id="reseau" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2>Réseaux Simulés</h2>
+                    <p>Configurations et simulations réseau avec Packet Tracer et autres outils</p>
+                </div>
+                
+                <div class="networks__grid">
+                    <div class="card reveal">
+                        <h3>Réseau LAN Simple</h3>
+                        <div class="network__diagram">
+                            <svg width="100%" height="100%" viewBox="0 0 300 200">
+                                <!-- PC 1 -->
+                                <g class="network__device" transform="translate(50, 80)">
+                                    <rect class="network__device-icon" width="40" height="40" rx="5" fill="#151b2e"/>
+                                    <text x="20" y="25" fill="#22D3EE" text-anchor="middle" dominant-baseline="middle">💻</text>
+                                    <text class="network__device-label" x="20" y="70" fill="#E3E8EF" text-anchor="middle">PC1</text>
+                                </g>
+                                
+                                <!-- PC 2 -->
+                                <g class="network__device" transform="translate(150, 80)">
+                                    <rect class="network__device-icon" width="40" height="40" rx="5" fill="#151b2e"/>
+                                    <text x="20" y="25" fill="#22D3EE" text-anchor="middle" dominant-baseline="middle">💻</text>
+                                    <text class="network__device-label" x="20" y="70" fill="#E3E8EF" text-anchor="middle">PC2</text>
+                                </g>
+                                
+                                <!-- Switch -->
+                                <g class="network__device" transform="translate(100, 30)">
+                                    <rect class="network__device-icon" width="40" height="40" rx="5" fill="#151b2e"/>
+                                    <text x="20" y="25" fill="#7C3AED" text-anchor="middle" dominant-baseline="middle">🔀</text>
+                                    <text class="network__device-label" x="20" y="70" fill="#E3E8EF" text-anchor="middle">Switch</text>
+                                </g>
+                                
+                                <!-- Connections -->
+                                <line class="network__connection" x1="70" y1="100" x2="130" y2="50" stroke="#22D3EE" stroke-width="2"/>
+                                <line class="network__connection" x1="170" y1="100" x2="130" y2="50" stroke="#22D3EE" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <p>Configuration de base d'un réseau local avec switch et deux postes clients. Adressage IP, VLAN et test de connectivité.</p>
+                        <a href="#" class="btn btn--secondary">Télécharger .pkt</a>
+                    </div>
+                    
+                    <div class="card reveal">
+                        <h3>Serveur Web avec DMZ</h3>
+                        <div class="network__diagram">
+                            <svg width="100%" height="100%" viewBox="0 0 300 200">
+                                <!-- Internet Cloud -->
+                                <g class="network__device" transform="translate(50, 30)">
+                                    <rect class="network__device-icon" width="40" height="40" rx="5" fill="#151b2e"/>
+                                    <text x="20" y="25" fill="#22D3EE" text-anchor="middle" dominant-baseline="middle">🌐</text>
+                                    <text class="network__device-label" x="20" y="70" fill="#E3E8EF" text-anchor="middle">Internet</text>
+                                </g>
+                                
+                                <!-- Router -->
+                                <g class="network__device" transform="translate(130, 30)">
+                                    <rect class="network__device-icon" width="40" height="40" rx="5" fill="#151b2e"/>
+                                    <text x="20" y="25" fill="#7C3AED" text-anchor="middle" dominant-baseline="middle">🔄</text>
+                                    <text class="network__device-label" x="20" y="70" fill="#E3E8EF" text-anchor="middle">Routeur</text>
+                                </g>
+                                
+                                <!-- Firewall -->
+                                <g class="network__device" transform="translate(210, 30)">
+                                    <rect class="network__device-icon" width="40" height="40" rx="5" fill="#151b2e"/>
+                                    <text x="20" y="25" fill="#7C3AED" text-anchor="middle" dominant-baseline="middle">🛡️</text>
+                                    <text class="network__device-label" x="20" y="70" fill="#E3E8EF" text-anchor="middle">Firewall</text>
+                                </g>
+                                
+                                <!-- Web Server -->
+                                <g class="network__device" transform="translate(210, 100)">
+                                    <rect class="network__device-icon" width="40" height="40" rx="5" fill="#151b2e"/>
+                                    <text x="20" y="25" fill="#22D3EE" text-anchor="middle" dominant-baseline="middle">🖥️</text>
+                                    <text class="network__device-label" x="20" y="70" fill="#E3E8EF" text-anchor="middle">Serveur Web</text>
+                                </g>
+                                
+                                <!-- Connections -->
+                                <line class="network__connection" x1="90" y1="50" x2="130" y2="50" stroke="#22D3EE" stroke-width="2"/>
+                                <line class="network__connection" x1="170" y1="50" x2="210" y2="50" stroke="#22D3EE" stroke-width="2"/>
+                                <line class="network__connection" x1="230" y1="70" x2="230" y2="100" stroke="#22D3EE" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <p>Mise en place d'une DMZ avec serveur web accessible depuis internet et réseau interne sécurisé.</p>
+                        <a href="#" class="btn btn--secondary">Télécharger .pkt</a>
+                    </div>
+                    
+                    <div class="card reveal">
+                        <h3>Réseau VPN Site-to-Site</h3>
+                        <div class="network__diagram">
+                            <svg width="100%" height="100%" viewBox="0 0 300 200">
+                                <!-- Site A -->
+                                <g class="network__device" transform="translate(50, 100)">
+                                    <rect class="network__device-icon" width="40" height="40" rx="5" fill="#151b2e"/>
+                                    <text x="20" y="25" fill="#22D3EE" text-anchor="middle" dominant-baseline="middle">🏢</text>
+                                    <text class="network__device-label" x="20" y="70" fill="#E3E8EF" text-anchor="middle">Site A</text>
+                                </g>
+                                
+                                <!-- Site B -->
+                                <g class="network__device" transform="translate(250, 100)">
+                                    <rect class="network__device-icon" width="40" height="40" rx="5" fill="#151b2e"/>
+                                    <text x="20" y="25" fill="#22D3EE" text-anchor="middle" dominant-baseline="middle">🏢</text>
+                                    <text class="network__device-label" x="20" y="70" fill="#E3E8EF" text-anchor="middle">Site B</text>
+                                </g>
+                                
+                                <!-- Internet -->
+                                <g class="network__device" transform="translate(150, 30)">
+                                    <rect class="network__device-icon" width="40" height="40" rx="5" fill="#151b2e"/>
+                                    <text x="20" y="25" fill="#7C3AED" text-anchor="middle" dominant-baseline="middle">🌐</text>
+                                    <text class="network__device-label" x="20" y="70" fill="#E3E8EF" text-anchor="middle">Internet</text>
+                                </g>
+                                
+                                <!-- VPN Connections -->
+                                <path class="network__connection" d="M70 100 C100 50, 200 50, 230 100" stroke="#22D3EE" stroke-width="2" fill="none"/>
+                                <path class="network__connection" d="M70 100 C100 150, 200 150, 230 100" stroke="#22D3EE" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <p>Configuration d'un VPN IPSec site-to-site entre deux routeurs pour connecter des réseaux distants de manière sécurisée.</p>
+                        <a href="#" class="btn btn--secondary">Télécharger configs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Events Section -->
+        <section id="evenements" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2>Événements & Challenges</h2>
+                    <p>Rencontres, ateliers et compétitions organisés par le club</p>
+                </div>
+                
+                <div class="events__calendar">
+                    <div class="event__card reveal">
+                        <span class="event__date">Chaque Mercredi</span>
+                        <h3>Réunion Hebdomadaire  de 20h-20h30</h3>
+                        <p>session de bilan et recapitulatif sur le meta</p>
+                    </div>
+                    
+                    <div class="event__card reveal">
+                        <span class="event__date">projet</span>
+                        <h3>Challenge API REST/RESEAUX , IoT<span class="event__badge">Nouveau</span></h3>
+                        <p>lancement de notre premier projet en dev ou reseaux</p>
+                    </div>
+                    
+                    <div class="event__card reveal">
+                        <span class="event__date">projet</span>
+                        <h3>Hackathon Interne <span class="event__badge">Hackathon</span></h3>
+                        <p>48h non-stop pour développer une application complète en équipe sur le thème de l'éducation.</p>
+                    </div>
+                    
+                    <div class="event__card reveal">
+                        <span class="event__date">autres ceremonies</span>
+                        <h3>m ipsum dolor sit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div class="event__card reveal">
+                        <span class="event__date">projets</span>
+                        <h3>m ipsum dolor sit</h3>
+                        <p>Lorem, ipsum dolor sit ame i</p>
+                    </div>
+
+                    <div class="event__card reveal">
+                        <span class="event__date">projet</span>
+                        <h3>Lore Repellendus</h3>
+                        <p>Lore Repellendus quas debitis voluptatibus </p>
+                    </div>
+
+                     <div class="event__card reveal">
+                        <span class="event__date">ceremonie</span>
+                        <h3>beach-code</h3>
+                        <p>session de codage plein air à la plage</p>
+                    </div>
+
+                     <div class="event__card reveal">
+                        <span class="event__date">presentation de projet</span>
+                        <h3>encoragement et critiques</h3>
+                        <p>...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Rules Section -->
+        <section id="reglement" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2>Règlement Intérieur</h2>
+                    <p>Principes et règles de fonctionnement du club</p>
+                </div>
+                
+                <div class="rules__list">
+                    <div class="rules__item reveal">
+                        <h3>Article 1 - Adhésion</h3>
+                        <p>L'adhésion au club est ouverte à tous les étudiants de L2 et L3 sur base volontaire. Elle devient effective après complétion du formulaire d'adhésion et acceptation par les coordinateurs.</p>
+                    </div>
+                    
+                    <div class="rules__item reveal">
+                        <h3>Article 2 - Engagements</h3>
+                        <p>Chaque membre s'engage à participer activement aux activités du club, respecter les délais des projets, et contribuer à une atmosphère bienveillante et collaborative.</p>
+                    </div>
+                    
+                    <div class="rules__item reveal">
+                        <h3>Article 3 - Absences</h3>
+                        <p>Les absences doivent être signalées à l'avance lorsque possible. Au-delà de 3 absences non justifiées, le membre peut être exclu du club.</p>
+                    </div>
+                    
+                    <div class="rules__callout reveal">
+                        <h3>Important</h3>
+                        <p>Zéro jugement —  esprit d'équire. Le club est un espace d'apprentissage bienveillant où l'entraide prime sur la compétition.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="document/Reglement_Interieur_Club_Dev_Reseaux.pdf" class="btn">Télécharger le règlement complet (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Team Section -->
+        <section id="equipe" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2>Équipe & Rôles</h2>
+                    <p>Les membres qui font vivre le DevNet Club</p>
+                </div>
+                
+                <div class="team__grid">
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Diarrasouba Mouhamed Aliou</h3>
+                        <p class="team__role">formateur web et aide en mobile</p>
+                        <p>chargé d'assurer la formation et la gestion des projets web/mobile</p>
+                        <div class="team__social">
+                            <a href="https://www.linkedin.com/in/mohamed-aliou-diarrassouba-ba85b236b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Attobra prince</h3>
+                        <p class="team__role">chef de projet/formateur Resaux</p>
+                        <p>Pilote l'ensemble du projet (ou de l'événement) de A à Z. Il définit les objectifs, le budget, le planning, coordonne l'ensemble de l'équipe et des prestataires, et est le garant de la réussite du projet</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Temoh ange</h3>
+                        <p class="team__role">Secretaire</p>
+                        <p>planificateur des cotisations et charger de faire des achats de materiels</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>OULIBALY ISRAEL BENJAMIN</h3>
+                        <p class="team__role">Community Manager</p>
+                        <p> Anime et fidélise une communauté autour d'une marque ou d'un événement sur les réseaux sociaux et autres plateformes en ligne. Il/elle crée du contenu, modère les discussions et fait rayonner l'événement.</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👩‍💻</div>
+                        <h3>GNAMBA MARIE DIVINE</h3>
+                        <p class="team__role">Formatrice anglais</p>
+                        <p>charger de former les membres du cub en anglais professionel orienté informatique.</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍🎓</div>
+                        <h3>Taki Ahou Naomi</h3>
+                        <p class="team__role">formatrice(CULTURE GENERALE)</p>
+                        <p>charger de former les membres du club en culture generale de l'informatique</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>KAMAGATE AICHA RAMADANE</h3>
+                        <p class="team__role">Coordinatrice</p>
+                        <p>Responsable de la planification des activités(-beach&code -journée de presentation de projets -Hackaton interne -et autes activités) et de la coordination entre les membres.</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Sidonie</h3>
+                        <p class="team__role">Chargée de la location/des réservations</p>
+                        <p>Son rôle est de rechercher, négocier et réserver les salles,salles de conférence ou tout espace adapté aux besoins de la réunion ou de l'événement</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Atché Seka</h3>
+                        <p class="team__role">Chargé des démarches administratives</p>
+                        <p>Spécialisé dans les aspects juridiques et administratifs des événements. Il/elle s'occupe des demandes d'autorisation (pour les visites d'entreprises etc..), des assurances, du respect des normes de sécurité et de toutes les obligations légales.</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Hilarie</h3>
+                        <p class="team__role">Chargée de la logistique repas.</p>
+                        <p>spécialisée dans la préparation de repas et de collations pour des événements et sorties au sein du club.</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>KOUASSI CARRY ALARIC GILLLES AYMAR</h3>
+                        <p class="team__role">Coordinateur de formation</p>
+                        <p>Il/elle gère le planning des formations, vérifie la disponibilité des participants et du formateur, assure le suivi administratif, évalue l'assiduité et mesure les résultats (bilan) pour s'assurer que les objectifs pédagogiques sont atteints.</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Adou Plank</h3>
+                        <p class="team__role">Formateur en bureautique</p>
+                        <p> Expert dans les suites logicielles (Microsoft Office, Google Workspace, etc.), il/elle conçoit et anime des sessions de formation pour enseigner leur utilisation efficace aux membres du club</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3> Kouabenan Francelle</h3>
+                        <p class="team__role">Communication Officer</p>
+                        <p> Élabore la stratégie de communication autour d'un événement ou d'un projet. Il/elle gère les relations presse, rédige les dossiers et communiqués, et s'occupe de tous les supports de communication (invitations, programmes, etc.).</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Diarrasouba Ousmane</h3>
+                        <p class="team__role">Logistics Manager</p>
+                        <p>Planifie, organise et gère tous les flux physiques nécessaires à un événement : transport du matériel et des personnes, gestion des stocks, approvisionnement, etc.</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Abdoul Rahime</h3>
+                        <p class="team__role">Management Controller</p>
+                        <p>Expert financier qui suit les budgets des projets, analyse les écarts, établit des prévisions et conseille les chefs de projet sur les aspects financiers pour garantir la rentabilité.</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Klah jeremie</h3>
+                        <p class="team__role">formateur en Graphistme/Designer</p>
+                        <p>formateur et Crée l'identité visuelle des événement ou des projet. Il/elle conçoit les logos, les supports de communication (affiches, invitations, programmes) et l'environnement visuel sur place.</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Elie Malachie Tizie</h3>
+                        <p class="team__role">Coach en développement personnel</p>
+                        <p>Accompagner des individus (des "coachés") dans la réalisation de leurs objectifs personnels et professionnels. Il/elle les aide à clarifier leurs aspirations, à surmonter leurs freins et limites, et à développer leur potentiel pour opérer des changements positifs dans leur vie.</p>
+                        <div class="team__social">
+                            <a href="https://www.linkedin.com/in/elie-malachie-tizie-275a0928b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Alidou Franck</h3>
+                        <p class="team__role">Responsable Partenariats & Financement</p>
+                        <p>Assurer la croissance et la sustainability financière du club en identifiant, négociant et gérant des partenariats avec des entreprises, en recherchant des sources de financement et en vendant les services ou la visibilité du club</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Evle Kouabo </h3>
+                        <p class="team__role">chef de groupe web/mobile(groupe A)</p>
+                        <p>charger de diriger le groupe dans les activités et projet web/mobile</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Marc Wilfred</h3>
+                        <p class="team__role">chef de groupe reseaux(groupe A)</p>
+                        <p>charger de diriger le groupe dans les activités et projet reseaux</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Yao Natty Hilary</h3>
+                        <p class="team__role">chef de groupe web/mobile(groupe B)</p>
+                        <p>charger de diriger le groupe dans les activités et projet web/mobile</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                     <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>moustapha balto</h3>
+                        <p class="team__role"> aide en web et formateur en mobile</p>
+                        <p>chargé d'assurer la formation et la gestion des projets web/mobile</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👩‍🎓</div>
+                        <h3>bonny Russel</h3>
+                        <p class="team__role">chef de groupe Réseaux(groupe B)</p>
+                        <p>charger de diriger le groupe dans les activités et projet reseaux.</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+
+                    <div class="team__member reveal">
+                        <div class="team__avatar">👨‍💼</div>
+                        <h3>Toussaint Sadia</h3>
+                        <p class="team__role">formateur en administration système</p>
+                        <p>chargé de nous enseigner les commandes linux , windows et Maos , les sytèmes d'exploitations et autres</p>
+                        <div class="team__social">
+                            <a href="#" class="team__social-link" aria-label="Profil LinkedIn">in</a>
+                            <a href="#" class="team__social-link" aria-label="Contacter par email">@</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      
+        
+        <!-- FAQ Section -->
+        <section id="faq" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2>Foire Aux Questions</h2>
+                    <p>Réponses aux questions fréquentes sur le club</p>
+                </div>
+                
+                <div class="faq__accordion">
+                    <div class="faq__item">
+                        <div class="faq__question">
+                            <h3>Qui peut rejoindre le DevNet Club ?</h3>
+                            <span class="faq__icon">▼</span>
+                        </div>
+                        <div class="faq__answer">
+                            <p>Le club est ouvert à tous les étudiants de L2 et L3, quel que soit leur niveau initial. La motivation et l'envie d'apprendre sont les seuls prérequis.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq__item">
+                        <div class="faq__question">
+                            <h3>Quel matériel est nécessaire ?</h3>
+                            <span class="faq__icon">▼</span>
+                        </div>
+                        <div class="faq__answer">
+                            <p>Un ordinateur portable suffisant pour faire du développement web (4GB RAM minimum) et une connexion internet. Pour la partie réseaux, tout le matériel nécessaire est fourni ou simulé.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq__item">
+                        <div class="faq__question">
+                            <h3>Comment sont choisis les projets ?</h3>
+                            <span class="faq__icon">▼</span>
+                        </div>
+                        <div class="faq__answer">
+                            <p>Les projets sont proposés par les membres et sélectionnés collectivement en fonction des compétences à acquérir, de la faisabilité et de l'intérêt pour le plus grand nombre.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq__item">
+                        <div class="faq__question">
+                            <h3>Y a-t-il des frais d'adhésion ?</h3>
+                            <span class="faq__icon">▼</span>
+                        </div>
+                        <div class="faq__answer">
+                            <p>Non, l'adhésion au club est entièrement gratuite pour tous les membres.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <!-- Join Section -->
+       <div class="Nousrejoindre" id="rejoindre">
+        <div class="tete">
+            <p>vous voulez nous rejoindre ??? </p>
+            <h3>c'est simple , veillez cliquer sur le boutton suivant</h3>
+        </div>
+        <button><a href="https://chat.whatsapp.com/GfVtzMJDHfDKy3DJFflfoX">Nous Contacter</a></button>
+        <button><a href="index3.html">Galerie</a></button>
+       </div>
+      
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <a href="#" class="footer__logo">DevNet Club</a>
+                    <p>Apprendre. Construire. Progresser.</p>
+                </div>
+                
+                <div>
+                    <h3 class="footer__title">Liens rapides</h3>
+                    <ul class="footer__links">
+                        <li><a href="#accueil" class="footer__link">Accueil</a></li>
+                        <li><a href="#roadmap" class="footer__link">Roadmap</a></li>
+                        <li><a href="#projets" class="footer__link">Projets</a></li>
+                        <li><a href="#rejoindre" class="footer__link">Rejoindre</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer__title">Ressources</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Règlement (PDF)</a></li>
+                        <li><a href="#" class="footer__link">Roadmap (PDF)</a></li>
+                        <li><a href="#" class="footer__link">Modèles Packet Tracer</a></li>
+                        <li><a href="#" class="footer__link">Bibliothèque de code</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer__title">Contact</h3>
+                    <ul class="footer__links">
+                        <li><a href="mailto:contact@devnetclub.org" class="footer__link">contact@devnetclub.org</a></li>
+                        <li><a href="#" class="footer__link">Discord</a></li>
+                        <li><a href="#" class="footer__link">GitHub</a></li>
+                        <li><a href="#" class="footer__link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>© 2025 DevNet Club. Tous droits réservés.</p>
+              
+            </div>
+        </div>
+    </footer>
+    
+    <a href="#main" class="back-to-top" aria-label="Remonter en haut de la page">↑</a>
+    
+    <div class="toast" id="toast" role="alert" aria-live="assertive">
+        <span class="toast__icon">✅</span>
+        <p class="toast__message">Votre message a été envoyé avec succès!</p>
+    </div>
+    
+    <script>
+        // Attendre que le DOM soit chargé
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navigation sticky
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('header--scrolled');
+                } else {
+                    header.classList.remove('header--scrolled');
+                }
+            });
+            
+            // Menu mobile
+            const navToggle = document.getElementById('navToggle');
+            const navList = document.getElementById('navList');
+            
+            navToggle.addEventListener('click', function() {
+                navList.classList.toggle('active');
+                navToggle.setAttribute('aria-expanded', 
+                    navToggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+            });
+            
+            // Changement de thème
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = themeToggle.querySelector('.theme-icon');
+            
+            themeToggle.addEventListener('click', function() {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                document.documentElement.setAttribute('data-theme', newTheme);
+                themeIcon.textContent = newTheme === 'dark' ? '🌙' : '🌙';
+                
+                // Sauvegarder la préférence
+                localStorage.setItem('theme', newTheme);
+            });
+            
+            // Charger le thème sauvegardé
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+                themeIcon.textContent = savedTheme === 'dark' ? '🌙' : '🌙';
+            }
+            
+            // Navigation par ancres
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        // Fermer le menu mobile si ouvert
+                        navList.classList.remove('active');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                        
+                        // Scroll vers l'élément
+                        const headerHeight = header.offsetHeight;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Système d'onglets pour la roadmap
+            const roadmapTabs = document.querySelectorAll('.roadmap__tab');
+            
+            roadmapTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Désactiver tous les onglets
+                    roadmapTabs.forEach(t => t.classList.remove('active'));
+                    
+                    // Activer l'onglet cliqué
+                    this.classList.add('active');
+                    
+                    // Afficher le contenu correspondant
+                    const tabName = this.getAttribute('data-tab');
+                    document.querySelectorAll('.roadmap__content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    document.getElementById(`roadmap-${tabName}`).classList.add('active');
+                });
+            });
+            
+            // Système d'accordéon
+            const accordions = document.querySelectorAll('.roadmap__accordion-header, .faq__question');
+            
+            accordions.forEach(accordion => {
+                accordion.addEventListener('click', function() {
+                    const parent = this.parentElement;
+                    parent.classList.toggle('active');
+                });
+            });
+            
+            // Animation au scroll
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            function checkReveal() {
+                const windowHeight = window.innerHeight;
+                const revealPoint = 150;
+                
+                revealElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    
+                    if (elementTop < windowHeight - revealPoint) {
+                        element.classList.add('active');
+                    }
+                });
+            }
+            
+            // Vérifier au chargement et au scroll
+            window.addEventListener('scroll', checkReveal);
+            window.addEventListener('load', checkReveal);
+            
+            // Bouton retour en haut
+            const backToTop = document.querySelector('.back-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 500) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            
+            // Validation du formulaire
+            const joinForm = document.getElementById('joinForm');
+            
+            joinForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                let isValid = true;
+                
+                // Validation du nom
+                const nameInput = document.getElementById('name');
+                const nameError = document.getElementById('nameError');
+                
+                if (!nameInput.value.trim()) {
+                    nameError.style.display = 'block';
+                    nameInput.parentElement.classList.add('error');
+                    isValid = false;
+                } else {
+                    nameError.style.display = 'none';
+                    nameInput.parentElement.classList.remove('error');
+                }
+                
+                // Validation de l'email
+                const emailInput = document.getElementById('email');
+                const emailError = document.getElementById('emailError');
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                
+                if (!emailPattern.test(emailInput.value)) {
+                    emailError.style.display = 'block';
+                    emailInput.parentElement.classList.add('error');
+                    isValid = false;
+                } else {
+                    emailError.style.display = 'none';
+                    emailInput.parentElement.classList.remove('error');
+                }
+                
+                // Validation de la filière
+                const filiereSelect = document.getElementById('filiere');
+                const filiereError = document.getElementById('filiereError');
+                
+                if (!filiereSelect.value) {
+                    filiereError.style.display = 'block';
+                    filiereSelect.parentElement.classList.add('error');
+                    isValid = false;
+                } else {
+                    filiereError.style.display = 'none';
+                    filiereSelect.parentElement.classList.remove('error');
+                }
+                
+                // Validation des centres d'intérêt
+                const interestCheckboxes = document.querySelectorAll('input[name="interests"]:checked');
+                const interestsError = document.getElementById('interestsError');
+                
+                if (interestCheckboxes.length === 0) {
+                    interestsError.style.display = 'block';
+                    isValid = false;
+                } else {
+                    interestsError.style.display = 'none';
+                }
+                
+                // Validation du consentement
+                const consentCheckbox = document.getElementById('consentement');
+                const consentError = document.getElementById('consentementError');
+                
+                if (!consentCheckbox.checked) {
+                    consentError.style.display = 'block';
+                    consentCheckbox.parentElement.parentElement.classList.add('error');
+                    isValid = false;
+                } else {
+                    consentError.style.display = 'none';
+                    consentCheckbox.parentElement.parentElement.classList.remove('error');
+                }
+                
+                // Validation du CAPTCHA
+                const captchaInput = document.getElementById('captcha');
+                const captchaError = document.getElementById('captchaError');
+                
+                if (captchaInput.value !== '8') {
+                    captchaError.style.display = 'block';
+                    captchaInput.parentElement.classList.add('error');
+                    isValid = false;
+                } else {
+                    captchaError.style.display = 'none';
+                    captchaInput.parentElement.classList.remove('error');
+                }
+                
+                // Si le formulaire est valide, afficher le toast
+                if (isValid) {
+                    const toast = document.getElementById('toast');
+                    toast.classList.add('visible');
+                    
+                    // Réinitialiser le formulaire après 3 secondes
+                    setTimeout(() => {
+                        joinForm.reset();
+                        toast.classList.remove('visible');
+                    }, 3000);
+                }
+            });
+            
+            // Effet de frappe pour le hero
+            const typewriterElement = document.querySelector('.typewriter');
+            const texts = ['Développement & Réseaux simulés', 'Apprendre. Construire. Progresser.', 'Communauté L2→L3'];
+            let textIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let typingSpeed = 100;
+            
+            function typeWriter() {
+                const currentText = texts[textIndex];
+                
+                if (isDeleting) {
+                    // Supprimer un caractère
+                    typewriterElement.textContent = currentText.substring(0, charIndex - 1);
+                    charIndex--;
+                    typingSpeed = 50;
+                } else {
+                    // Ajouter un caractère
+                    typewriterElement.textContent = currentText.substring(0, charIndex + 1);
+                    charIndex++;
+                    typingSpeed = 100;
+                }
+                
+                // Changer de direction si nécessaire
+                if (!isDeleting && charIndex === currentText.length) {
+                    isDeleting = true;
+                    typingSpeed = 1000; // Pause à la fin du mot
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                    typingSpeed = 500; // Pause avant de commencer un nouveau mot
+                }
+                
+                setTimeout(typeWriter, typingSpeed);
+            }
+            
+            // Démarrer l'effet après un délai initial
+            setTimeout(typeWriter, 1000);
+        });
+    </script>
+</body>
+</html>

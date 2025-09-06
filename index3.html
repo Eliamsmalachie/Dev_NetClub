@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Club Informatique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="img/logo.png" alt="" height="60px" width="60px">
+                </div>
+                <div class="logo-text">Club Informatique</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Accueil</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#">Événements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bannière -->
+    <section class="banner">
+        <div class="container">
+            <h1>Galerie du Club Informatique</h1>
+            <p>Découvrez nos activités à travers ces moments capturés en tenue de formation ou de cérémonie selon l'occasion.</p>
+            <a href="#gallery" class="btn">Voir la galerie</a>
+        </div>
+    </section>
+
+    <!-- Contenu principal -->
+    <main class="container" id="gallery">
+        <!-- Section tenues -->
+        <section class="outfits-section">
+            <div class="outfit-header">
+                <h2>Nos <span class="highlight">Tenues</span></h2>
+                <p>Nous portons une attention particulière à nos tenues selon les événements auxquels nous participons.</p>
+            </div>
+            
+                
+                 <div class="outfit-cards">
+                <div class="outfit-card">
+                    <div class="outfit-image">
+                        <img src="img/WhatsApp Image 2025-08-30 à 10.22.04_cf82cfec.jpg" alt="Tenue de formation">
+                    </div>
+                    <div class="outfit-content">
+                        <h3 class="outfit-title">Tenue de Formation</h3>
+                        <p class="outfit-desc">Tenue professionnelle et confortable pour nos sessions de formation, ateliers techniques et conférences.</p>
+                        <span class="outfit-type">Formations & Ateliers</span>
+                    </div>
+                </div>
+
+
+    
+                <div class="outfit-card">
+                    <div class="outfit-image">
+                        <img src="img/WhatsApp Image 2025-08-30 à 10.22.05_c1ee9348.jpg" alt="Tenue de cérémonie">
+                    </div>
+                    <div class="outfit-content">
+                        <h3 class="outfit-title">Tenue de Formation</h3>
+                        <p class="outfit-desc">Tenue professionnelle et confortable pour nos sessions de formation, ateliers techniques et conférences</p>
+                        <span class="outfit-type">Formations & Ateliers</span>
+                    </div>
+                </div>
+
+                
+    
+                <div class="outfit-card">
+                    <div class="outfit-image">
+                        <img src="img/WhatsApp Image 2025-08-30 à 10.22.05_1858283b.jpg" alt="Tenue de cérémonie">
+                    </div>
+                    <div class="outfit-content">
+                        <h3 class="outfit-title">Tenue de Formation</h3>
+                        <p class="outfit-desc">Tenue professionnelle et confortable pour nos sessions de formation, ateliers techniques et conférences</p>
+                        <span class="outfit-type">Formations & Ateliers</span>
+                    </div>
+                </div>
+
+                
+    
+                <div class="outfit-card">
+                    <div class="outfit-image">
+                        <img src="img/WhatsApp Image 2025-08-24 à 20.01.04_8b9b6d0c.jpg" alt="Tenue de cérémonie">
+                    </div>
+                    <div class="outfit-content">
+                        <h3 class="outfit-title">Tenue de Cérémonie</h3>
+                        <p class="outfit-desc">Tenue élégante et soignée pour les événements spéciaux, fêtes, cérémonies et sorties officielles.</p>
+                        <span class="outfit-type">Événements Spéciaux</span>
+                    </div>
+                </div>
+
+                
+    
+                <div class="outfit-card">
+                    <div class="outfit-image">
+                        <img src="img/WhatsApp Image 2025-08-24 à 20.01.04_704ec1aa.jpg" alt="Tenue de cérémonie">
+                    </div>
+                    <div class="outfit-content">
+                        <h3 class="outfit-title">Tenue de Cérémonie</h3>
+                        <p class="outfit-desc">Tenue élégante et soignée pour les événements spéciaux, fêtes, cérémonies et sorties officielles.</p>
+                        <span class="outfit-type">Événements Spéciaux</span>
+                    </div>
+                </div>
+
+                <div class="outfit-card">
+                    <div class="outfit-image">
+                        <img src="img/WhatsApp Image 2025-08-24 à 20.01.05_516e395e.jpg" alt="Tenue de cérémonie">
+                    </div>
+                    <div class="outfit-content">
+                        <h3 class="outfit-title">Tenue de Cérémonie</h3>
+                        <p class="outfit-desc">Tenue élégante et soignée pour les événements spéciaux, fêtes, cérémonies et sorties officielles.</p>
+                        <span class="outfit-type">Événements Spéciaux</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section galerie -->
+        <section id="gallery">
+            <h2>Notre <span class="highlight">Galerie</span></h2>
+
+            <!-- Filtres -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-layer-group"></i> Toutes les images
+                </button>
+                <button class="filter-btn" data-filter="formations">
+                    <i class="fas fa-graduation-cap"></i> Formations
+                </button>
+                <button class="filter-btn" data-filter="fetes">
+                    <i class="fas fa-glass-cheers"></i> Fêtes & Sorties
+                </button>
+            </div>
+
+            <!-- Galerie -->
+            <div class="gallery">
+                <!-- Formations -->
+                <div class="gallery-item" data-category="formations">
+                    <img src="img/pexels-jakubzerdzicki-19124461.jpg" alt="Atelier programmation" class="gallery-image">
+                    <div class="image-category">Formation</div>
+                    <div class="image-overlay">
+                        <div class="image-title">Atelier Programmation Avancée</div>
+                        <div class="image-desc">Session de formation Python pour les membres avancés du club</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="formations">
+                    <img src="img/pexels-kindelmedia-7688336.jpg" alt="Conférence web" class="gallery-image">
+                    <div class="image-category">Formation</div>
+                    <div class="image-overlay">
+                        <div class="image-title">Conférence Technologies Web</div>
+                        <div class="image-desc">Intervention sur les technologies modernes du développement web</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="formations">
+                    <img src="img/pexels-brett-sayles-2881224.jpg" alt="Formation réseaux" class="gallery-image">
+                    <div class="image-category">Formation</div>
+                    <div class="image-overlay">
+                        <div class="image-title">Formation Réseaux</div>
+                        <div class="image-desc">Atelier configuration réseau avancée pour nos membres</div>
+                    </div>
+                </div>
+                
+                <!-- Fêtes & Sorties -->
+                <div class="gallery-item" data-category="fetes">
+                    <img src="img/pexels-rdne-6224773.jpg" alt="Fête de fin d'année" class="gallery-image">
+                    <div class="image-category">Cérémonie</div>
+                    <div class="image-overlay">
+                        <div class="image-title">Fête de Fin d'Année</div>
+                        <div class="image-desc">Célébration des réussites de l'année avec tous les membres</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="fetes">
+                    <img src="img/pexels-tima-miroshnichenko-7991175.jpg" alt="Sortie technologique" class="gallery-image">
+                    <div class="image-category">Sortie</div>
+                    <div class="image-overlay">
+                        <div class="image-title">Sortie Technologique</div>
+                        <div class="image-desc">Visite d'un centre de données dernière génération</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="fetes">
+                    <img src="img/pexels-jakubzerdzicki-22610381.jpg" alt="Remise des diplômes" class="gallery-image">
+                    <div class="image-category">Cérémonie</div>
+                    <div class="image-overlay">
+                        <div class="image-title">internet des objets </div>
+                        <div class="image-desc">un projets reseaux d'internet des objets</div>
+                    </div>
+                </div>
+                
+                <!-- Plus d'images -->
+                <div class="gallery-item" data-category="formations">
+                    <img src="img/pexels-cottonbro-6804086.jpg" alt="Hackathon" class="gallery-image">
+                    <div class="image-category">Formation</div>
+                    <div class="image-overlay">
+                        <div class="image-title">Hackathon Annuel</div>
+                        <div class="image-desc">24h de programmation intensive et créative entre membres</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="fetes">
+                    <img src="img/pexels-borkography-12366583.jpg" alt="Barbecue club" class="gallery-image">
+                    <div class="image-category">Sortie</div>
+                    <div class="image-overlay">
+                        <div class="image-title">Barbecue du Club</div>
+                        <div class="image-desc">Moment de détente et de partage entre les membres</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="formations">
+                    <img src="img/pexels-vanessa-loring-7869034.jpg" alt="Workshop robotique" class="gallery-image">
+                    <div class="image-category">Formation</div>
+                    <div class="image-overlay">
+                        <div class="image-title">Workshop Robotique</div>
+                        <div class="image-desc">Atelier découverte de la robotique pour débutants</div>
+                    </div>
+                </div>
+                <div class="video">
+                <video src="img/WhatsApp Vidéo 2025-08-30 à 10.22.04_5da21b6c.mp4" autoplay muted  loop></video>
+                
+                </div>
+                <div class="video">
+                    <video src="img/WhatsApp Vidéo 2025-08-24 à 19.48.12_113ff139.mp4" autoplay muted loop></video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal pour l'affichage des images -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption" class="modal-caption"></div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container-footer-content">
+            <div class="footer-logo">
+                <div class="footer-logo-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="footer-logo-text">Club Informatique</div>
+            </div>
+            
+            
+            
+            <div class="copyright">
+                <p>&copy; 2025 Club Informatique|Tous droits réservés</p>
+            </div>
+            <button><a href="index2.html">aller a la page principale</a></button>
+        </div>
+    </footer>
+
+    <script>
+        // Filtrage des images
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Active le bouton cliqué
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    const filterValue = button.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Modal pour l'affichage des images
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const captionText = document.getElementById('modalCaption');
+            const closeModal = document.querySelector('.modal-close');
+            
+            galleryItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    modal.style.display = 'flex';
+                    modalImg.src = item.querySelector('img').src;
+                    captionText.innerHTML = item.querySelector('.image-title').innerHTML;
+                });
+            });
+            
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+            
+            // Fermer la modal en cliquant à l'extérieur de l'image
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
